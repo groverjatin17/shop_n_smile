@@ -1,0 +1,191 @@
+.loginArea{
+    max-width: 1300px;
+    margin: auto;
+}
+.loginNavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(185, 179, 179);
+}
+.loginNav{
+    /* flex: 1; */
+    text-align: right;
+}
+.loginNav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.loginNav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.loginNav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.loginNav ul li::after{
+    position: absolute;
+    content:'';
+    height: 3px;
+    width: 0;
+    background-color: black;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.loginNav ul li:hover::after{
+    width: 100%;
+     
+}
+
+.login-menu-icon{
+    display: none;
+    width: 28px;
+    margin-left: 20px;
+}
+.loginRow{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+/*---------*/
+    
+}
+/* .header .loginRow{
+    margin-top: 70px;
+} */
+.login-col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.login-col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.login-col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.login-footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.login-footer p{
+    color: #8a8a8a;
+}
+.login-footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.login-footer-col1,.login-footer-col2,.login-footer-col3,.login-footer-col4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.login-footer-col1{
+    flex-basis: 30%;
+}
+.login-footer-col2{
+    flex: 1;
+    text-align: center;
+}
+.login-footer-col2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.login-footer-col3,.login-footer-col4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.login-footer li{
+    display: block;
+}
+.login-footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin:  20px 0;
+}
+.copyright{
+    text-align: center;
+    
+}
+
+/* Register page */
+.accout-page{
+    padding: 50px 0;
+    background: radial-gradient(rgb(185, 179, 179),#a1a033);
+}
+
+.login-form-container{
+    background: #fff;
+    width: 400px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+#indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s; 
+}
+
+.login-form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    transition: transform 1s;
+}
+
+#LoginForm{
+     left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+
+.MuiTabs-flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MuiButton-root{
+    margin: 0;
+}
